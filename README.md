@@ -1,4 +1,4 @@
-# [fallaciesofjsperf.com](https://fallaciesofjsperf.com)
+# [Fallacies of JS Performance](http://alibhai.co/fallaciesofjsperf)
 
 A collection of short fallacies that we (JS devs) believed at one point or another about JS performance.
 
