@@ -54,3 +54,11 @@ a,
 a:active {
   text-decoration: none;
 }
+
+li > a {
+  color: #000;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
