@@ -32,6 +32,7 @@ The performance difference can be radical depending on the number of debug logs 
 
 In most cases, this is not really something that we can optimize for by hand (it is sometimes, but when you write code it is better to be clear rather than clever). The role of optimizing function calls should be of a compile-time optimizer such as [clojure compiler](https://developers.google.com/closure/compiler/) or [prepack](https://github.com/facebook/prepack).
 
+Sample benchmark: [../benchmark/stack-frames-are-free.js](../benchmark/stack-frames-are-free.js)
 ```
                       stack frames are free
      101,103,164 op/s » debug enabled with inner check
@@ -39,5 +40,6 @@ In most cases, this is not really something that we can optimize for by hand (it
      126,364,210 op/s » debug disabled with inner check
      137,416,641 op/s » debug disabled with outer check
 ```
+*Run on a MacBook Pro (Mid-2014) on Node.js v6.15.0.*
 
 *In the first two, it is clear that there is not a significant difference between the two methods. But when debug is disabled (which is the typical production case), there can be a dramatic difference.*

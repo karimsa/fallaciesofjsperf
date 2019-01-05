@@ -11,3 +11,4 @@ In one particular production use case, the Jest team was able to reduce their ti
 Sample benchmark: [https://jsperf.com/objects-are-hashmaps](https://jsperf.com/objects-are-hashmaps)
 
 ![](../graphs/objects-are-hashmaps.png)
+*Run on a MacBook Pro (Mid-2014) via Chrome 70.0.3538.110.*
