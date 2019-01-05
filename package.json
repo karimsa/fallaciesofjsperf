@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "fallaciesofjsperf",
+  "scripts": {
+    "start": "matcha"
+  },
+  "devDependencies": {
+    "matcha": "^0.7.0"
+  }
+}
