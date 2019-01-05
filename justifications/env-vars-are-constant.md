@@ -16,7 +16,7 @@ There is nothing wrong with the pattern in particular except that environment va
 
 The correct way to do this is to declare constants in the scope of the module (or in a factory function if you require dynamic bootups) and then use those constants instead of calls to `process.env`. For this to work, you have to avoid setting any env vars (since they will be pre-captured) which should be fine since it is a bad practice to attempt to share memory this way across concurrent processes.
 
-This would move the cost of the lookup from your running time to your starutp time, which is very effective of server applications. However, if you are building a simple CLI tool that runs then exits, you may not see much of a difference since your tool would need to startup fast and probably not lookup values multiple times.
+This would move the cost of the lookup from your running time to your startup time, which is very effective of server applications. However, if you are building a simple CLI tool that runs then exits, you may not see much of a difference since your tool would need to startup fast and probably not lookup values multiple times.
 
 Sample benchmark: [../benchmark/env-vars-are-constant.js](../benchmark/env-vars-are-constant.js).
 
