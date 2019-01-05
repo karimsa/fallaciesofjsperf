@@ -18,11 +18,12 @@ html {
 
 body {
   text-align: center;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 h1 {
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 ul > li {
@@ -36,7 +37,7 @@ li:last-child {
 
 ul {
   list-style: none;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 p {
@@ -56,4 +57,8 @@ li > a {
 
 li > a:hover {
   text-decoration: underline;
+}
+
+footer {
+  margin-bottom: 2rem;
 }
