@@ -19,11 +19,6 @@ html {
 body {
   text-align: center;
   padding: 1rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 h1 {
