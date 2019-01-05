@@ -1,6 +1,6 @@
 # [Fallacies of JS Performance](http://alibhai.co/fallaciesofjsperf)
 
-A collection of short fallacies that we (JS devs) believed at one point or another about JS performance.
+A short list of fallacies that beginners to JS often believe.
 
 ## License
 
