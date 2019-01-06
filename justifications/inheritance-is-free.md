@@ -1,8 +1,8 @@
 # Inheritance is free.
 
-JS is a dynamic language - but sometimes too dynamic. It's implementation of "object orientation" uses a design called prototypal inheritance which consists of all objects having a prototype which is the "class" implementation that is passed down into it.
+JS is a dynamic language - but sometimes too dynamic. It's implementation of "object orientation" uses a design called prototypal inheritance which consists of all objects having a prototype which is the "class" implementation that is passed down into it. When you request properties from the object, the runtime first checks the object and then checks its prototype until it is able to find a value - therefore, attempts to access an immediate property would be faster than trying to access a property from the prototype. When using inheritance, you pay the cost of traversal for each layer of the inheritance.
 
-However, prototypes are just simple objects and therefore also dynamic. This leads to some pains in performance such as having to lookup any properties/methods against the actual object, then against its prototype, and then against the prototype of the prototype, etc. This cost tends to add up and actually slows down the application quite a bit.
+Furthermore, prototypes are just simple objects and therefore also dynamic. This leads to some pains in performance such as having to lookup any properties/methods against the actual object, then against its prototype, and then against the prototype of the prototype, etc. This cost tends to add up and actually slows down the application quite a bit.
 
 Modern day JITs inside of JS engines come with optimizations to help ease this pain. For instance, V8 will attempt to analyze the shape of your object and if it is has a stable shape (i.e. a static one), then it will produce a C++ class for your object and use that to manage your object - which can help speed up property lookups.
 
