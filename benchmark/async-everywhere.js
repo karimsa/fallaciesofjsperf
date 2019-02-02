@@ -7,6 +7,6 @@ suite('use async everywhere', () => {
     return a + b
   }
 
-  bench('async function', () => asyncAdd(1, 1))
+  bench('async function', next => asyncAdd(1, 1).then(next))
   bench('sync function', () => syncAdd(1, 1))
 })

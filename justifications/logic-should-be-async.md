@@ -79,7 +79,7 @@ function withPromises() {
 Sample benchmark: [../benchmark/async-everywhere.js](../benchmark/async-everywhere.js)
 ```
                       use async everywhere
-      25,493,144 op/s » async function
-     187,395,684 op/s » sync function
+      11,037,215 op/s » async function
+   1,498,630,425 op/s » sync function
 ```
 *Run on a MacBook Pro (Mid-2014) on Node.js v6.15.0.*
